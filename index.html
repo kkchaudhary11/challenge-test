@@ -10,7 +10,7 @@
     integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-  <script src="app.js"></script>
+  <!-- <script src="app.js"></script> -->
 
   <link rel="stylesheet" href="style.css">
 
@@ -30,14 +30,13 @@
   <br>
   <div class="container">
 
-
+    <!-- header start -->
     <div class="row">
       <div class="col-sm text-center">
         <div class="main">
           <br>
-          <a class="btn btn-outline-primary btn-lg" href="lipsync.html" role="button">Lip-Sync Challenge</a>
+          <a class="btn btn-outline-primary btn-lg" id ="lisync_button" onclick="lipsync()" role="button">Lip-Sync Challenge</a>
           <br><br>
-       
         </div>
 
       </div>
@@ -45,7 +44,7 @@
       <div class="col-sm text-center">
         <div class="main">
           <br>
-          <a class="btn btn-outline-primary btn-lg" href="asr.html" role="button">ASR
+          <a class="btn btn-outline-primary btn-lg" onclick="asr()" role="button">ASR
             Challenge</a>
           <br></br>
         </div>
@@ -55,23 +54,544 @@
       <div class="col-sm text-center">
         <div class="main">
           <br>
-          <a class="btn btn-outline-primary btn-lg" href="tts.html" role="button">TTS Challenge</a>
+          <a class="btn btn-outline-primary btn-lg" onclick="tts()" role="button">TTS Challenge</a>
           <br></br>
         </div>
 
       </div>
 
     </div>
-    
-<hr>
+
+    <!-- header end -->
+
+    <hr>
+
+    <!-- ########################### --content-- ####################################### -->
 
 
-<br>
-<br>
+    <div id="lipsync" style="display:none">
 
+      <!-- heading  -->
+      <div class="row">
+        <div class="col-sm text-center">
+          <div class="main">
+            <h2 class="text-primary">Lip-Sync Challenge</h2>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- content start -->
+      <div class="row">
+        <div class="d-flex align-items-start">
+          <div style="max-width: 140px">
+            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <button class="nav-link active" id="v-pill-overview-lipsync-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pill-overview-lipsync" type="button" role="tab"
+                aria-controls="v-pill-overview-lipsync" aria-selected="true">Overview</button>
+              <button class="nav-link" id="v-pills-tasks-lipsync-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-tasks-lipsync" type="button" role="tab" aria-controls="v-pills-tasks-lipsync"
+                aria-selected="false">Tasks</button>
+              <button class="nav-link" id="v-pills-output-lipsync-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-output-lipsync" type="button" role="tab" aria-controls="v-pills-output-lipsync"
+                aria-selected="false">Output Submission</button>
+              <button class="nav-link" id="v-pills-evaluation-lipsync-lipsync-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-evaluation-lipsync-lipsync" type="button" role="tab"
+                aria-controls="v-pills-evaluation-lipsync-lipsync" aria-selected="false">Evaluation Process</button>
+              <button class="nav-link" id="v-pills-benifits-lipsync-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-benifits-lipsync" type="button" role="tab"
+                aria-controls="v-pills-benifits-lipsync" aria-selected="false"> Benefits of Participation</button>
+              <button class="nav-link" id="v-pills-participation-lipsync-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-participation-lipsync" type="button" role="tab"
+                aria-controls="v-pills-participation-lipsync" aria-selected="false">Call For Participation</button>
+              <button class="nav-link" id="v-pills-previous-lipsync-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-previous-lipsync" type="button" role="tab"
+                aria-controls="v-pills-previous-lipsync" aria-selected="false">Previous Challenges</button>
+            </div>
+          </div>
+
+          <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade show active" id="v-pill-overview-lipsync" role="tabpanel"
+              aria-labelledby="v-pill-overview-lipsync-tab">
+              <section>
+                Speech technologies and Natural Language Processing (NLP) have attracted more attention
+                in recent times. Recent advances in these technologies have shown that Automatic Speech
+                Recognition (ASR), Machine Translation (MT), Text to Speech Synthesis (TTS) systems with
+                some human intervention can produce usable speech-to-speech translation. When it comes
+                to translating videos of one language to another language, the duration of a speech file
+                created in the target language is different from the duration of the speech file in the
+                source language. As a result, target language speech does not suitably fit on the
+                original video and lip-syncing is required. Around the world, various approaches are
+                being used for lip-syncing. In India, the speech research community has grown
+                significantly in the present time and one can witness the current speech revolution. It
+                is necessary to understand and compare various research techniques used to do
+                lip-syncing. Primary objective of this challenge is to understand and compare the
+                different lip-syncing approaches while simultaneously identifying efficient groups in
+                this domain in the country.
+              </section>
+
+            </div>
+            <div class="tab-pane fade" id="v-pills-tasks-lipsync" role="tabpanel"
+              aria-labelledby="v-pills-tasks-lipsync-tab">
+              <section>
+                <ul>
+                  <li><b>Task 1:</b> Lip-Syncing of source video with target speech (TTS) audio:</li>
+                  <ul>
+                    <li><b>Language Pairs:</b></li>
+                    <ol type="a">
+                      <li>English to Hindi</li>
+                      <li>English to Tamil</li>
+                    </ol>
+
+                    <li><b>Input Data:</b></li>
+                    <ul>
+                      <li>5-6 source videos of 20 to 30 minutes in English language</li>
+                      <li>Corresponding SRT file (having corresponding transcription and time
+                        stamp using ASR)</li>
+                      <li>Speech audio file in the target language (using TTS), and transcription
+                      </li>
+                    </ul>
+                    <li><b>Target:</b> Participants will have to develop/optimise their lip syncing
+                      algorithm/method to work efficiently on the given videos.</li>
+                    <ul>
+                      <li>This task is a closed challenge task and participants must only use the
+                        above given data.</li>
+                    </ul>
+                    <li><b>Evaluation:</b> Subjective evaluation of lip-syncing performance of the
+                      output video (refer below for more information)</li>
+                    <li><b>Submission:</b> Submit lip-synced videos in target language (refer below
+                      for more information)</li>
+                  </ul>
+                  <br>
+                  <br>
+                  <li><b>Task 2:</b> Speech-to-Speech Translation with Lip-Syncing:</li>
+                  <ul>
+                    <li><b>Language Pairs:</b></li>
+                    <ol type="a">
+                      <li>English to Hindi</li>
+                      <li>English to Tamil</li>
+                    </ol>
+
+                    <li><b>Input Data:</b> 5-6 videos of 20 to 30 minutes in English language.</li>
+                    <li><b>Target:</b> Participants will have to develop/optimise end to end system
+                      for speech to speech translation of videos with lip-syncing.</li>
+                    <ul>
+                      <li>Participants may use any ASR, MT, and TTS systems as per their choice.
+                      </li>
+                      <li>Participants will have to develop/optimise their lip syncing
+                        algorithm/method to work efficiently on the given videos.</li>
+                    </ul>
+                    <li><b>Evaluation:</b> Subjective evaluation of quality of the output video.
+                      This includes the audio quality, lip-syncing performance, and above all, how
+                      well the information in the source video is preserved in the target video.
+                      (refer below for more information)</li>
+                    <li><b>Submission:</b> Submit lip-synced videos in target language (Refer below
+                      for more information)</li>
+                  </ul>
+                </ul>
+                <br>
+                <p><b>NB:</b> Participants may take part in one or both the tasks and take one or both
+                  language pairs </p>
+                <br>
+              </section>
+            </div>
+            <div class="tab-pane fade" id="v-pills-output-lipsync" role="tabpanel"
+              aria-labelledby="v-pills-output-lipsync-tab">
+              <h6>Task 1 :</h6>
+              A video of around 20 minutes duration, similar (with respect to the domain, speaker, type etc)
+              to the input video, corresponding SRT, speech file in target language, and corresponding speech
+              file will be released to participants after 4 weeks of the announcement of the challenge. Each
+              participant will get a different video. Participants will have to do lip-syncing and generate a
+              video in the target language, and share the same with us. 1 minute clip from source video and
+              corresponding clip from target video will be taken for evaluation.
+              <br><br>
+              <h6>Task 2 :</h6>
+              A video of around 20 minutes duration, similar (with respect to the domain, speaker, type etc)
+              to the input video, will be released to participants after 4 weeks of the announcement of the
+              challenge. Each participant will get a different video. Participants will have to do
+              speech-to-speech translation and lip-syncing, and generate a video in target language, and share
+              both the videos (source and target) with us. 1 minute clip from source video and corresponding
+              clip from target video will be taken for evaluation.
+
+              <h3>Write Up</h3>
+              Along with the built system, participant will have to submit a write up (1-2 page) about the
+              following:
+              <ul>
+                <li>Approach</li>
+                <li>Technology</li>
+                <li>Data</li>
+                <li>Challenges faced</li>
+                <li>Features</li>
+                <li>Observations</li>
+                <li>etc...</li>
+              </ul>
+            </div>
+
+            <div class="tab-pane fade" id="v-pills-evaluation-lipsync-lipsync" role="tabpanel"
+              aria-labelledby="v-pills-evaluation-lipsync-lipsync-tab">
+
+              <h3>Listening Test</h3>
+              <h6>Task 1:</h6>
+              The organisers will conduct a Mean Opinion Score (MOS) testing to evaluate the submitted target
+              language video clips. Evaluators will watch the target language video and give ranking for
+              lip-syncing accuracy on a scale of 1 to 5 (higher the score better the quality).
+              <br><br>
+              <h6>Task 2:</h6>
+              The organisers will conduct a Degradation Mean Opinion Score (DMOS) testing to evaluate
+              the submitted target language video clip with reference to the original language video
+              clip. Evaluators will compare the target language video with the source language video
+              clip and give ranking for quality of output video on a scale of 1 to 5 (higher the score
+              better the quality). This includes the audio quality, lip-syncing performance, and above
+              all, how well the information in the source video is preserved in the target video.
+
+            </div>
+            <div class="tab-pane fade" id="v-pills-benifits-lipsync" role="tabpanel"
+              aria-labelledby="v-pills-benifits-lipsync-tab">
+              Those who perform well in this challenge may get the following opportunities:
+              <ul>
+                <li>A leadership board will be published with the name and ranking of good performers on
+                  the National Platform for Language Technology (https://nplt.in) website.</li>
+                <li>MHRD and MeitY are planning to engage some agencies to do speech-to-speech
+                  translation. Good performers would get priority in this process.</li>
+                <li>Opportunity to participate in the next phase of the project.</li>
+              </ul>
+            </div>
+            <div class="tab-pane fade" id="v-pills-previous-lipsync" role="tabpanel"
+              aria-labelledby="v-pills-previous-lipsync-tab">
+              Lip Sync Challnage was organized in August 2021
+              <br>
+              For more info please click <a href="https://tdil-dc.in/ttsapi/lipsyncchallenge2021/index.html">here</a>
+            </div>
+            <div class="tab-pane fade" id="v-pills-participation-lipsync" role="tabpanel"
+              aria-labelledby="v-pills-participation-lipsync-tab">
+              Exact dates and other details about the challenge will be announced soon.<br> Please fill out the below
+              form to get a notification
+              about the challenge announcement
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- content end -->
+
+    </div>
+
+    <!-- ############# next ############## -->
+
+    <div id="asr" style="display:none">
+      <!-- heading -->
+      <div class="row">
+        <div class="col-sm text-center">
+          <div class="main">
+            <h2 class="text-primary">ASR Challenge</h2>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- content start -->
+      <div class="row">
+        <div class="d-flex align-items-start">
+          <div style="max-width: 140px">
+            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <button class="nav-link active" id="v-pills-overview-asr-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-overview-asr" type="button" role="tab" aria-controls="v-pills-overview-asr"
+                aria-selected="true">Overview</button>
+              <button class="nav-link" id="v-pills-tasks-asr-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-tasks-asr" type="button" role="tab" aria-controls="v-pills-tasks-asr"
+                aria-selected="false">Tasks</button>
+              <button class="nav-link" id="v-pills-output-asr-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-output-asr" type="button" role="tab" aria-controls="v-pills-output-asr"
+                aria-selected="false">Output Submission</button>
+              <button class="nav-link" id="v-pills-evaluation-asr-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-evaluation-asr" type="button" role="tab" aria-controls="v-pills-evaluation-asr"
+                aria-selected="false">Evaluation Process</button>
+              <button class="nav-link" id="v-pills-benifits-asr-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-benifits-asr" type="button" role="tab" aria-controls="v-pills-benifits-asr"
+                aria-selected="false"> Benefits of Participation</button>
+              <button class="nav-link" id="v-pills-participation-asr-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-participation-asr" type="button" role="tab"
+                aria-controls="v-pills-participation-asr" aria-selected="false">Call For Participation</button>
+              <button class="nav-link" id="v-pills-previous-asr-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-previous-asr" type="button" role="tab" aria-controls="v-pills-previous-asr"
+                aria-selected="false">Previous Challenges</button>
+            </div>
+          </div>
+
+          <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade show active" id="v-pills-overview-asr" role="tabpanel"
+              aria-labelledby="v-pills-overview-asr-tab">
+              <section>
+                Recent advancements in Speech technology have shown that ASR systems can work on par with
+                humans. To build a good ASR system requires large amounts of training data and high-end
+                computational resources.
+
+                However, when it comes to Indian languages, not everyone, especially academic institutions
+                and startups, have access to these resources. As a part of this challenge, we will be
+                releasing speech data in Indian English. Everyone who participates in this challenge will
+                then be free to use this data for research purposes.
+              </section>
+
+            </div>
+            <div class="tab-pane fade" id="v-pills-tasks-asr" role="tabpanel" aria-labelledby="v-pills-tasks-asr-tab">
+              <section>
+
+                <b>Closed Hindi-ASR Challenge:</b> Only the training data distributed as part of the
+                challenge can be used to train the models (both acoustic and language models). Please do not
+                use dev set data.
+                <br><br>
+                <b>Open Hindi-ASR Challenge:</b> You can use any external/additional data to train the
+                acoustic and language models.
+
+              </section>
+            </div>
+            <div class="tab-pane fade" id="v-pills-output-asr" role="tabpanel" aria-labelledby="v-pills-output-asr-tab">
+              <ul>
+                <li>Submissions should include the ASR output produced by the system and a brief description
+                  of the system </li>
+                <li>The format of the decode files to be submitted will be shared soon. </li>
+                <li>Data</li>
+                <li>Participating teams can submit a maximum of 10 submissions per team </li>
+                <li>Results will be displayed on a leader board throughout the period that the submission
+                  site is open </li>
+
+              </ul>
+            </div>
+
+            <div class="tab-pane fade" id="v-pills-evaluation-asr" role="tabpanel"
+              aria-labelledby="v-pills-evaluation-asr-tab">
+
+
+            </div>
+            <div class="tab-pane fade" id="v-pills-benifits-asr" role="tabpanel"
+              aria-labelledby="v-pills-benifits-asr-tab">
+              Those who perform well in this challenge may get the following opportunities:
+              <ul>
+                <li>A leadership board will be published with the name and ranking of good performers on
+                  the National Platform for Language Technology (https://nplt.in) website.</li>
+                <li>MHRD and MeitY are planning to engage some agencies to do speech-to-speech
+                  translation. Good performers would get priority in this process.</li>
+                <li>Opportunity to participate in the next phase of the project.</li>
+              </ul>
+            </div>
+            <div class="tab-pane fade" id="v-pills-previous-asr" role="tabpanel"
+              aria-labelledby="v-pills-previous-asr-tab">
+              HINDI-TAMIL-ENGLISH ASR CHALLENGE was organized in May 2021
+              <br>
+              For more info please click <a
+                href="https://sites.google.com/view/indian-language-asrchallenge/home">here</a>
+              <br><br>
+              ENGLISH ASR CHALLENGE was organized in December 2020
+              <br>
+              For more info please click <a href="https://sites.google.com/view/englishasrchallenge/home">here</a>
+              <br><br>
+              HINDI ASR CHALLENGE was organized in July 2020
+              <br>
+              For more info please click <a href="https://sites.google.com/view/asr-challenge">here</a>
+            </div>
+            <div class="tab-pane fade" id="v-pills-participation-asr" role="tabpanel"
+              aria-labelledby="v-pills-participation-asr-tab">
+              Exact dates and other details about the challenge will be announced soon.<br> Please fill out the below
+              form to get a notification
+              about the challenge announcement
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- content end -->
+    </div>
+
+    <!-- ############# next ############## -->
+
+    <div id="tts" style="display: none">
+      <!-- heading -->
+      <div class="row">
+        <div class="col-sm text-center">
+          <div class="main">
+            <h2 class="text-primary">TTS Challenge</h2>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+      <!-- content start -->
+      <div class="row">
+        <div class="d-flex align-items-start">
+          <div style="max-width: 140px">
+            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <button class="nav-link active" id="v-pills-overview-tts-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-overview-tts" type="button" role="tab" aria-controls="v-pills-overview-tts"
+                aria-selected="true">Overview</button>
+              <button class="nav-link" id="v-pills-tasks-tts-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-tasks-tts" type="button" role="tab" aria-controls="v-pills-tasks-tts"
+                aria-selected="false">Tasks</button>
+              <button class="nav-link" id="v-pills-output-tts-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-output-tts" type="button" role="tab" aria-controls="v-pills-output-tts"
+                aria-selected="false">Output Submission</button>
+              <button class="nav-link" id="v-pills-evaluation-tts-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-evaluation-tts" type="button" role="tab" aria-controls="v-pills-evaluation-tts"
+                aria-selected="false">Evaluation Process</button>
+              <button class="nav-link" id="v-pills-benifits-tts-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-benifits-tts" type="button" role="tab" aria-controls="v-pills-benifits-tts"
+                aria-selected="false"> Benefits of Participation</button>
+              <button class="nav-link" id="v-pills-participation-tts-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-participation-tts" type="button" role="tab"
+                aria-controls="v-pills-participation-tts" aria-selected="false">Call For Participation</button>
+              <button class="nav-link" id="v-pills-previous-tts-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-previous-tts" type="button" role="tab" aria-controls="v-pills-previous-tts"
+                aria-selected="false">Previous Challenges</button>
+            </div>
+          </div>
+
+          <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade show active" id="v-pills-overview-tts" role="tabpanel"
+              aria-labelledby="v-pills-overview-tts-tab">
+              <section>
+                Speech synthesis, also known as text-to-speech (TTS), has attracted increasingly more
+                attention in recent times. Recent advances on speech synthesis has shown that TTS systems
+                can produce very natural sounding speech from text. All around the world, TTS systems are
+                built using various approaches. In India speech research community has grown significantly
+                in the present time, and one can witness the current speech revolution. It is necessary to
+                understand and compare the various research techniques used to build Indian Language TTS
+                systems. Primary objective of this challenge is -- understanding and comparing the various
+                approaches to build TTS and simultaneously identifying efficient speech groups in the
+                country.
+                <br>
+                Good quality studio recorded speech data with very accurate transcript is required to build
+                a high quality TTS system. However, when it comes to Indian languages, not everyone,
+                especially academic institutions and startups, have access to these resources. As a part of
+                this challenge, we will be releasing good quality training data for Hindi and Tamil.
+                Everyone who participates in this challenge will then be free to use this data for research
+                purposes.
+              </section>
+
+            </div>
+            <div class="tab-pane fade" id="v-pills-tasks-tts" role="tabpanel" aria-labelledby="v-pills-tasks-tts-tab">
+              <section>
+
+                <p>About 5 hours of speech data in each of Hindi Male, Hindi Female, Tamil Male and Tamil
+                  Female, recorded by native professional speakers in high quality studio environments,
+                  and corresponding Text in UTF-8 format will be provided. No other information, such as
+                  segment labels, will be provided. Participants may build one voice for one or more
+                  subtask and submit for evaluation in web API form (as mentioned below). The subtasks are
+                  numbered as follows:</p>
+                <ul>
+                  <li>2020-ILTTS Hindi Male</li>
+                  <li>2020-ILTTS Hindi Female</li>
+                  <li>2020-ILTTS Tamil Male</li>
+                  <li>2020-ILTTS Tamil Female</li>
+                </ul>
+              </section>
+            </div>
+            <div class="tab-pane fade" id="v-pills-output-tts" role="tabpanel" aria-labelledby="v-pills-output-tts-tab">
+              <p>After building a system participants will have to put it on server and provide us url of GUI,
+                where text can be synthesised. Organisers will use this url to prepare test data for
+                listening test. This url may be public or private (only access to organiser).
+                It is not permissible for a single participant to submit multiple entries to any subtask
+                (mentioned above), because the listening test may otherwise become unmanageable. This rule
+                may be relaxed in the event of a small number of participants.</p>
+
+              <h4>Write Up</h4>
+              <p>Along with the built system participant will have to submit a write up (one page or two page)
+                about the entry mentioning approach, technology, data, challenge faced, features,
+                observations, etc.</p>
+
+            </div>
+
+            <div class="tab-pane fade" id="v-pills-evaluation-tts" role="tabpanel"
+              aria-labelledby="v-pills-evaluation-tts-tab">
+
+              <h3>Listening Test</h3>
+              <p>The organisers will conduct a DMOS (“degradation” or “differential” MOS test ) listening test
+                to evaluate the submitted system.</p>
+            </div>
+            <div class="tab-pane fade" id="v-pills-benifits-tts" role="tabpanel"
+              aria-labelledby="v-pills-benifits-tts-tab">
+              Those who perform well in this challenge may get the following opportunities:
+              <ul>
+                <li>Some seed funding to develop product/solution using the technologies developed under
+                  this project</li>
+                <li>MHRD and MeitY are planning to engage some agencies to do Speech to Speech translation.
+                  Good performers would get priority in this process.</li>
+                <li>Opportunity to participate in the next phase of the project.</li>
+              </ul>
+            </div>
+            <div class="tab-pane fade" id="v-pills-previous-tts" role="tabpanel"
+              aria-labelledby="v-pills-previous-tts-tab">
+              TTS Challnage was organized in July 2020
+              <br>
+              For more info please click <a href="https://tdil-dc.in/ttsapi/ttschallenge2020/">here</a>
+            </div>
+            <div class="tab-pane fade" id="v-pills-participation-tts" role="tabpanel"
+              aria-labelledby="v-pills-participation-tts-tab"> 
+              Exact dates and other details about the challenge will be announced soon.<br> Please fill out the below form to get a notification
+              about the challenge announcement
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- content end -->
+
+    </div>
+
+    <!-- ############# next ############## -->
+
+    <br>
+
+    <div id="google_form">
+      <div class="row">
+        <div class="col-sm text-center">
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSdikR6XjsZnH-asAQVFSzeo0llijaThzggvKPvH_Zqilfi-cg/viewform?embedded=true"
+            width="600" height="1200" frameborder="0" marginheight="0" marginwidth="200">Loading…</iframe>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <br>
   </div>
-
-
 </body>
+
+<script>
+
+
+
+  var lipsyn_div = document.getElementById("lipsync");
+  var asr_div = document.getElementById("asr");
+  var tts_div = document.getElementById("tts");
+  var form_div = document.getElementById("google_form");
+
+
+  function clear(...hide_content_div){
+    for (var i=0; i < hide_content_div.length; i++) {
+      hide_content_div[i].style.display = "none";
+    }
+  }
+
+  function showhide(content_div){
+    if (content_div.style.display === "none") {
+      content_div.style.display = "block";
+    } else {
+      content_div.style.display = "none";
+    }
+  }
+
+  function lipsync() {
+    clear(asr_div,tts_div);
+    showhide(lipsyn_div)
+  }
+
+  function asr() {
+    clear(lipsyn_div,tts_div);
+    showhide(asr_div)
+  }
+
+  function tts() {
+    clear(lipsyn_div,asr_div);
+    showhide(tts_div)
+  }
+</script>
 
 </html>
