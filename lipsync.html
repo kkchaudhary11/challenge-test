@@ -35,196 +35,176 @@
             </div>
         </div>
 
-        <hr>
-
         <div class="row">
-            <div class="d-flex align-items-start">
-                <div style="max-width: 140px">
-                    <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
-                        aria-orientation="vertical">
-                        <button class="nav-link active" id="v-pill-overview-tab" data-bs-toggle="pill"
-                            data-bs-target="#v-pill-overview" type="button" role="tab" aria-controls="v-pill-overview"
-                            aria-selected="true">Overview</button>
-                        <button class="nav-link" id="v-pills-tasks-tab" data-bs-toggle="pill"
-                            data-bs-target="#v-pills-tasks" type="button" role="tab" aria-controls="v-pills-tasks"
-                            aria-selected="false">Tasks</button>
-                        <button class="nav-link" id="v-pills-output-tab" data-bs-toggle="pill"
-                            data-bs-target="#v-pills-output" type="button" role="tab" aria-controls="v-pills-output"
-                            aria-selected="false">Output Submission</button>
-                        <button class="nav-link" id="v-pills-evaluation-tab" data-bs-toggle="pill"
-                            data-bs-target="#v-pills-evaluation" type="button" role="tab"
-                            aria-controls="v-pills-evaluation" aria-selected="false">Evaluation Process</button>
-                        <button class="nav-link" id="v-pills-benifits-tab" data-bs-toggle="pill"
-                            data-bs-target="#v-pills-benifits" type="button" role="tab" aria-controls="v-pills-benifits"
-                            aria-selected="false"> Benefits of Participation</button>
-                        <button class="nav-link" id="v-pills-participation-tab" data-bs-toggle="pill"
-                            data-bs-target="#v-pills-participation" type="button" role="tab"
-                            aria-controls="v-pills-participation" aria-selected="false">Call For Participation</button>
-                        <button class="nav-link" id="v-pills-previous-tab" data-bs-toggle="pill"
-                            data-bs-target="#v-pills-previous" type="button" role="tab" aria-controls="v-pills-previous"
-                            aria-selected="false">Previous Challenges</button>
-                    </div>
-                </div>
+            <h3> Overview </h3>
+            <section>
+                <p> Speech technologies and Natural Language Processing (NLP) have attracted more attention
+                    in recent times. Recent advances in these technologies have shown that Automatic Speech
+                    Recognition (ASR), Machine Translation (MT), Text to Speech Synthesis (TTS) systems with
+                    some human intervention can produce usable speech-to-speech translation. When it comes
+                    to translating videos of one language to another language, the duration of a speech file
+                    created in the target language is different from the duration of the speech file in the
+                    source language. As a result, target language speech does not suitably fit on the
+                    original video and lip-syncing is required. Around the world, various approaches are
+                    being used for lip-syncing. In India, the speech research community has grown
+                    significantly in the present time and one can witness the current speech revolution. It
+                    is necessary to understand and compare various research techniques used to do
+                    lip-syncing. Primary objective of this challenge is to understand and compare the
+                    different lip-syncing approaches while simultaneously identifying efficient groups in
+                    this domain in the country.</p>
+            </section>
 
-                <div class="tab-content" id="v-pills-tabContent">
-                    <div class="tab-pane fade show active" id="v-pill-overview" role="tabpanel"
-                        aria-labelledby="v-pill-overview-tab">
-                        <section>
-                            Speech technologies and Natural Language Processing (NLP) have attracted more attention
-                            in recent times. Recent advances in these technologies have shown that Automatic Speech
-                            Recognition (ASR), Machine Translation (MT), Text to Speech Synthesis (TTS) systems with
-                            some human intervention can produce usable speech-to-speech translation. When it comes
-                            to translating videos of one language to another language, the duration of a speech file
-                            created in the target language is different from the duration of the speech file in the
-                            source language. As a result, target language speech does not suitably fit on the
-                            original video and lip-syncing is required. Around the world, various approaches are
-                            being used for lip-syncing. In India, the speech research community has grown
-                            significantly in the present time and one can witness the current speech revolution. It
-                            is necessary to understand and compare various research techniques used to do
-                            lip-syncing. Primary objective of this challenge is to understand and compare the
-                            different lip-syncing approaches while simultaneously identifying efficient groups in
-                            this domain in the country.
-                        </section>
+            <h3>Tasks</h3>
+            <section>
+                <ul>
+                    <li><b>Task 1:</b> Lip-Syncing of source video with target speech (TTS) audio:</li>
+                    <ul>
+                        <li><b>Language Pairs:</b></li>
+                        <ol type="a">
+                            <li>English to Hindi</li>
+                            <li>English to Tamil</li>
+                        </ol>
 
-                    </div>
-                    <div class="tab-pane fade" id="v-pills-tasks" role="tabpanel" aria-labelledby="v-pills-tasks-tab">
-                        <section>
-                            <ul>
-                                <li><b>Task 1:</b> Lip-Syncing of source video with target speech (TTS) audio:</li>
-                                <ul>
-                                    <li><b>Language Pairs:</b></li>
-                                    <ol type="a">
-                                        <li>English to Hindi</li>
-                                        <li>English to Tamil</li>
-                                    </ol>
-
-                                    <li><b>Input Data:</b></li>
-                                    <ul>
-                                        <li>5-6 source videos of 20 to 30 minutes in English language</li>
-                                        <li>Corresponding SRT file (having corresponding transcription and time
-                                            stamp using ASR)</li>
-                                        <li>Speech audio file in the target language (using TTS), and transcription
-                                        </li>
-                                    </ul>
-                                    <li><b>Target:</b> Participants will have to develop/optimise their lip syncing
-                                        algorithm/method to work efficiently on the given videos.</li>
-                                    <ul>
-                                        <li>This task is a closed challenge task and participants must only use the
-                                            above given data.</li>
-                                    </ul>
-                                    <li><b>Evaluation:</b> Subjective evaluation of lip-syncing performance of the
-                                        output video (refer below for more information)</li>
-                                    <li><b>Submission:</b> Submit lip-synced videos in target language (refer below
-                                        for more information)</li>
-                                </ul>
-                                <br>
-                                <br>
-                                <li><b>Task 2:</b> Speech-to-Speech Translation with Lip-Syncing:</li>
-                                <ul>
-                                    <li><b>Language Pairs:</b></li>
-                                    <ol type="a">
-                                        <li>English to Hindi</li>
-                                        <li>English to Tamil</li>
-                                    </ol>
-
-                                    <li><b>Input Data:</b> 5-6 videos of 20 to 30 minutes in English language.</li>
-                                    <li><b>Target:</b> Participants will have to develop/optimise end to end system
-                                        for speech to speech translation of videos with lip-syncing.</li>
-                                    <ul>
-                                        <li>Participants may use any ASR, MT, and TTS systems as per their choice.
-                                        </li>
-                                        <li>Participants will have to develop/optimise their lip syncing
-                                            algorithm/method to work efficiently on the given videos.</li>
-                                    </ul>
-                                    <li><b>Evaluation:</b> Subjective evaluation of quality of the output video.
-                                        This includes the audio quality, lip-syncing performance, and above all, how
-                                        well the information in the source video is preserved in the target video.
-                                        (refer below for more information)</li>
-                                    <li><b>Submission:</b> Submit lip-synced videos in target language (Refer below
-                                        for more information)</li>
-                                </ul>
-                            </ul>
-                            <br>
-                            <p><b>NB:</b> Participants may take part in one or both the tasks and take one or both
-                                language pairs </p>
-                            <br>
-                        </section>
-                    </div>
-                    <div class="tab-pane fade" id="v-pills-output" role="tabpanel" aria-labelledby="v-pills-output-tab">
-                        <h6>Task 1 :</h6>
-                        A video of around 20 minutes duration, similar (with respect to the domain, speaker, type etc)
-                        to the input video, corresponding SRT, speech file in target language, and corresponding speech
-                        file will be released to participants after 4 weeks of the announcement of the challenge. Each
-                        participant will get a different video. Participants will have to do lip-syncing and generate a
-                        video in the target language, and share the same with us. 1 minute clip from source video and
-                        corresponding clip from target video will be taken for evaluation.
-                        <br><br>
-                        <h6>Task 2 :</h6>
-                        A video of around 20 minutes duration, similar (with respect to the domain, speaker, type etc)
-                        to the input video, will be released to participants after 4 weeks of the announcement of the
-                        challenge. Each participant will get a different video. Participants will have to do
-                        speech-to-speech translation and lip-syncing, and generate a video in target language, and share
-                        both the videos (source and target) with us. 1 minute clip from source video and corresponding
-                        clip from target video will be taken for evaluation.
-
-                        <h3>Write Up</h3>
-                        Along with the built system, participant will have to submit a write up (1-2 page) about the
-                        following:
+                        <li><b>Input Data:</b></li>
                         <ul>
-                            <li>Approach</li>
-                            <li>Technology</li>
-                            <li>Data</li>
-                            <li>Challenges faced</li>
-                            <li>Features</li>
-                            <li>Observations</li>
-                            <li>etc...</li>
+                            <li>5-6 source videos of 20 to 30 minutes in English language</li>
+                            <li>Corresponding SRT file (having corresponding transcription and time
+                                stamp using ASR)</li>
+                            <li>Speech audio file in the target language (using TTS), and transcription
+                            </li>
                         </ul>
-                    </div>
-
-                    <div class="tab-pane fade" id="v-pills-evaluation" role="tabpanel"
-                        aria-labelledby="v-pills-evaluation-tab">
-
-                        <h3>Listening Test</h3>
-                        <h6>Task 1:</h6>
-                        The organisers will conduct a Mean Opinion Score (MOS) testing to evaluate the submitted target
-                        language video clips. Evaluators will watch the target language video and give ranking for
-                        lip-syncing accuracy on a scale of 1 to 5 (higher the score better the quality).
-                        <br><br>
-                        <h6>Task 2:</h6>
-                        The organisers will conduct a Degradation Mean Opinion Score (DMOS) testing to evaluate
-                        the submitted target language video clip with reference to the original language video
-                        clip. Evaluators will compare the target language video with the source language video
-                        clip and give ranking for quality of output video on a scale of 1 to 5 (higher the score
-                        better the quality). This includes the audio quality, lip-syncing performance, and above
-                        all, how well the information in the source video is preserved in the target video.
-
-                    </div>
-                    <div class="tab-pane fade" id="v-pills-benifits" role="tabpanel"
-                        aria-labelledby="v-pills-benifits-tab">
-                        Those who perform well in this challenge may get the following opportunities:
+                        <li><b>Target:</b> Participants will have to develop/optimise their lip syncing
+                            algorithm/method to work efficiently on the given videos.</li>
                         <ul>
-                            <li>A leadership board will be published with the name and ranking of good performers on
-                                the National Platform for Language Technology (https://nplt.in) website.</li>
-                            <li>MHRD and MeitY are planning to engage some agencies to do speech-to-speech
-                                translation. Good performers would get priority in this process.</li>
-                            <li>Opportunity to participate in the next phase of the project.</li>
+                            <li>This task is a closed challenge task and participants must only use the
+                                above given data.</li>
                         </ul>
-                    </div>
-                    <div class="tab-pane fade" id="v-pills-previous" role="tabpanel"
-                        aria-labelledby="v-pills-previous-tab">
-                        Lip Sync Challnage was organized in August 2021
-                        <br>
-                        For more info please click <a
-                            href="https://tdil-dc.in/ttsapi/lipsyncchallenge2021/index.html">here</a>
-                    </div>
-                    <div class="tab-pane fade" id="v-pills-participation" role="tabpanel"
-                        aria-labelledby="v-pills-participation-tab"> Please fill out the below form to get a notification about the challenge announcement 
-                        <br>
-                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdikR6XjsZnH-asAQVFSzeo0llijaThzggvKPvH_Zqilfi-cg/viewform?embedded=true" width="800px" height="1200" frameborder="0" marginheight="0" marginwidth="200">Loading…</iframe>
-                    </div>
+                        <li><b>Evaluation:</b> Subjective evaluation of lip-syncing performance of the
+                            output video (refer below for more information)</li>
+                        <li><b>Submission:</b> Submit lip-synced videos in target language (refer below
+                            for more information)</li>
+                    </ul>
+                    <br>
+                    <br>
+                    <li><b>Task 2:</b> Speech-to-Speech Translation with Lip-Syncing:</li>
+                    <ul>
+                        <li><b>Language Pairs:</b></li>
+                        <ol type="a">
+                            <li>English to Hindi</li>
+                            <li>English to Tamil</li>
+                        </ol>
+
+                        <li><b>Input Data:</b> 5-6 videos of 20 to 30 minutes in English language.</li>
+                        <li><b>Target:</b> Participants will have to develop/optimise end to end system
+                            for speech to speech translation of videos with lip-syncing.</li>
+                        <ul>
+                            <li>Participants may use any ASR, MT, and TTS systems as per their choice.
+                            </li>
+                            <li>Participants will have to develop/optimise their lip syncing
+                                algorithm/method to work efficiently on the given videos.</li>
+                        </ul>
+                        <li><b>Evaluation:</b> Subjective evaluation of quality of the output video.
+                            This includes the audio quality, lip-syncing performance, and above all, how
+                            well the information in the source video is preserved in the target video.
+                            (refer below for more information)</li>
+                        <li><b>Submission:</b> Submit lip-synced videos in target language (Refer below
+                            for more information)</li>
+                    </ul>
+                </ul>
+                <br>
+                <p><b>NB:</b> Participants may take part in one or both the tasks and take one or both
+                    language pairs </p>
+                <br>
+            </section>
+
+            <h3>Output Submission</h3>
+            <section>
+                <h6>Task 1 :</h6>
+                <p> A video of around 20 minutes duration, similar (with respect to the domain, speaker, type etc)
+                    to the input video, corresponding SRT, speech file in target language, and corresponding speech
+                    file will be released to participants after 4 weeks of the announcement of the challenge. Each
+                    participant will get a different video. Participants will have to do lip-syncing and generate a
+                    video in the target language, and share the same with us. 1 minute clip from source video and
+                    corresponding clip from target video will be taken for evaluation.</p>
+
+                <h6>Task 2 :</h6>
+                <p>A video of around 20 minutes duration, similar (with respect to the domain, speaker, type etc)
+                    to the input video, will be released to participants after 4 weeks of the announcement of the
+                    challenge. Each participant will get a different video. Participants will have to do
+                    speech-to-speech translation and lip-syncing, and generate a video in target language, and share
+                    both the videos (source and target) with us. 1 minute clip from source video and corresponding
+                    clip from target video will be taken for evaluation.</p>
+
+                <h5>Write Up</h5>
+
+                Along with the built system, participant will have to submit a write up (1-2 page) about the
+                following:
+
+                <ul>
+                    <li>Approach</li>
+                    <li>Technology</li>
+                    <li>Data</li>
+                    <li>Challenges faced</li>
+                    <li>Features</li>
+                    <li>Observations</li>
+                    <li>etc...</li>
+                </ul>
+            </section>
+
+            <h3>Evaluation Process</h3>
+            <section>
+                <h6>Task 1:</h6>
+                <p> The organisers will conduct a Mean Opinion Score (MOS) testing to evaluate the submitted target
+                    language video clips. Evaluators will watch the target language video and give ranking for
+                    lip-syncing accuracy on a scale of 1 to 5 (higher the score better the quality).</p>
+
+                <h6>Task 2:</h6>
+                <p>The organisers will conduct a Degradation Mean Opinion Score (DMOS) testing to evaluate
+                    the submitted target language video clip with reference to the original language video
+                    clip. Evaluators will compare the target language video with the source language video
+                    clip and give ranking for quality of output video on a scale of 1 to 5 (higher the score
+                    better the quality). This includes the audio quality, lip-syncing performance, and above
+                    all, how well the information in the source video is preserved in the target video.</p>
+                </p>
+            </section>
+
+            <h3>Benefits of Participation</h3>
+            <section>
+                <p>
+                    Those who perform well in this challenge may get the following opportunities:
+                <ul>
+                    <li>A leadership board will be published with the name and ranking of good performers on
+                        the National Platform for Language Technology (https://nplt.in) website.</li>
+                    <li>MHRD and MeitY are planning to engage some agencies to do speech-to-speech
+                        translation. Good performers would get priority in this process.</li>
+                    <li>Opportunity to participate in the next phase of the project.</li>
+                </ul>
+                </p>
+            </section>
+
+            <h3>Call For Participation</h3>
+            <section>
+                Please fill out the below form to get a
+                notification about the challenge announcement
+                <br>
+                <div class="col-sm text-center">
+                    <iframe
+                        src="https://docs.google.com/forms/d/e/1FAIpQLSdikR6XjsZnH-asAQVFSzeo0llijaThzggvKPvH_Zqilfi-cg/viewform?embedded=true"
+                        width="800px" height="1200" frameborder="0" marginheight="0" marginwidth="200">Loading…</iframe>
                 </div>
-            </div>
+            </section>
+
+            <h3>Previous Challenges</h3>
+            <section>
+                Lip Sync Challnage was organized in August 2021
+                <br>
+                For more info please click <a href="https://tdil-dc.in/ttsapi/lipsyncchallenge2021/index.html">here</a>
+            </section>
+
+
         </div>
+
+
 
         <hr>
 
